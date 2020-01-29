@@ -1,26 +1,53 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { Component } from 'react';
+
+import { Week } from './components/week/week.component';
+import { Day } from './components/day/day.component';
+
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends Component {
+
+  render() {
+    const weeks = [
+      {name: 'Week 1', id: 1},
+      {name: 'Week 2', id: 2},
+      {name: 'Week 1', id: 3},
+      {name: 'Week 2', id: 4}
+    ];
+
+    const days = [
+      {name: 'Wed', number: 1, id: 1},
+      {name: 'Th', number: 2, id: 2},
+      {name: 'Fri', number: 3, id: 3},
+      {name: 'Mon', number: 4, id: 4},
+      {name: 'Tue', number: 5, id: 5},
+      {name: 'Wed', number: 6, id: 6},
+      {name: 'Th', number: 7, id: 7},
+      {name: 'Fri', number: 8, id: 8},
+      {name: 'Mon', number: 9, id: 9},
+      {name: 'Tue', number: 10, id: 10},
+      {name: 'Wed', number: 1, id: 11},
+      {name: 'Th', number: 2, id: 12},
+      {name: 'Fri', number: 3, id: 13},
+      {name: 'Mon', number: 4, id: 14},
+      {name: 'Tue', number: 5, id: 15},
+      {name: 'Wed', number: 6, id: 16},
+      {name: 'Th', number: 7, id: 17},
+      {name: 'Fri', number: 8, id: 18},
+      {name: 'Mon', number: 9, id: 19},
+      {name: 'Tue', number: 10, id: 20}
+    ];
+
+    return (
+      <div className="App">
+        <header className="App-header">
+          <h1>WCS Release Cadence</h1>
+        </header>
+        <Week weeks={weeks} />
+        <Day days={days} />
+      </div>
+    );
+  }
 }
 
 export default App;

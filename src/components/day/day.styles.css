@@ -1,11 +1,32 @@
 .day-list {
+    border-top: 1px solid black;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
 }
 .day-container {
+    align-items: center;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    width: calc(100% / 5);
+}
+.day-container > div {
+    width: 100%;
+    min-height: 50px;
+}
+/* .day-container > div:nth-child(n) {
+    border-bottom: 1px solid black;
+} */
+/* .day-number {
+    border-top: 1px solid black;
+} */
+/* .day-number:nth-child(n+2),
+.day-name:nth-child(n+2) {
+    border-left: 1px solid black;
+} */
+.day-name,
+.day-number {
+    border-top: 1px solid black;
+    border-right: 1px solid black;
 }

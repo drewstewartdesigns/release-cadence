@@ -11,20 +11,23 @@
     flex-direction: column;
     width: calc(100% / 5);
 }
+.day-container:last-child .day-name,
+.day-container:last-child .day-number {
+    border-right: none;
+}
 .day-container > div {
     width: 100%;
     min-height: 50px;
 }
-/* .day-container > div:nth-child(n) {
-    border-bottom: 1px solid black;
-} */
-/* .day-number {
-    border-top: 1px solid black;
-} */
-/* .day-number:nth-child(n+2),
-.day-name:nth-child(n+2) {
+.day-container:first-child .day-details.bordered {
+    border-left: none;
+    width: 100%;
+}
+.day-details.bordered {
     border-left: 1px solid black;
-} */
+    border-right: 1px solid black;
+    width: calc(100% - 1px);
+}
 .day-name,
 .day-number {
     border-top: 1px solid black;

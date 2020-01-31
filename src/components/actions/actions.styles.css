@@ -21,3 +21,19 @@
     background-color: darkseagreen;
     width: calc(100% / 20 * 5);
 }
+
+.nested {
+    display: flex;
+    flex-wrap: wrap;
+}
+.nested .action:first-child {
+    flex-basis: 100%;
+}
+.action.defects {
+    width: calc(100% / 5 * 3);
+    background-color: lightsteelblue;
+}
+.action.blockers {
+    width: calc(100% / 5 * 2);
+    background-color: deepskyblue;
+}

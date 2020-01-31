@@ -21,32 +21,12 @@ export const CadenceData = [
             {
                 name: 'Release',
                 id: 4,
-                class: 'release',
-                actions: [
-                    {
-                        name: 'Go Live State Regression',
-                        class: 'action'
-                    },
-                    {
-                        name: 'All Defects',
-                        class: 'action'
-                    },
-                    {
-                        name: 'Blockers Only',
-                        class: 'action'
-                    }
-                ]
+                class: 'release'
             },
             {
                 name: 'Develop',
                 id: 1,
-                class: 'develop',
-                actions: [
-                    {
-                        name: 'Development',
-                        class: 'action'
-                    }
-                ]
+                class: 'develop'
             }
         ],
         actions: [
@@ -64,17 +44,17 @@ export const CadenceData = [
                 branch: [
                     {
                         name: 'Go Live State Regression',
-                        class: 'action',
+                        class: 'action regression',
                         id: 1
                     },
                     {
                         name: 'All Defects',
-                        class: 'action',
+                        class: 'action defects',
                         id: 2
                     },
                     {
                         name: 'Blockers Only',
-                        class: 'action',
+                        class: 'action blockers',
                         id: 3
                     }
                 ]
@@ -93,17 +73,17 @@ export const CadenceData = [
                 branch: [
                     {
                         name: 'Go Live State Regression',
-                        class: 'action',
+                        class: 'action regression',
                         id: 1
                     },
                     {
                         name: 'All Defects',
-                        class: 'action',
+                        class: 'action defects',
                         id: 2
                     },
                     {
                         name: 'Blockers Only',
-                        class: 'action',
+                        class: 'action blockers',
                         id: 3
                     }
                 ]

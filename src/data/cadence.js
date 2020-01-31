@@ -51,6 +51,7 @@ export const CadenceData = [
         ],
         actions: [
             {
+                class: 'develop',
                 branch: [
                     {
                         name: 'Development',
@@ -59,6 +60,7 @@ export const CadenceData = [
                 ]
             },
             {
+                class: 'release',
                 branch: [
                     {
                         name: 'Go Live State Regression',
@@ -78,6 +80,7 @@ export const CadenceData = [
                 ]
             },
             {
+                class: 'develop',
                 branch: [
                     {
                         name: 'Development',
@@ -86,6 +89,7 @@ export const CadenceData = [
                 ]
             },
             {
+                class: 'release',
                 branch: [
                     {
                         name: 'Go Live State Regression',
@@ -101,6 +105,15 @@ export const CadenceData = [
                         name: 'Blockers Only',
                         class: 'action',
                         id: 3
+                    }
+                ]
+            },
+            {
+                class: 'develop',
+                branch: [
+                    {
+                        name: 'Development',
+                        class: 'action'
                     }
                 ]
             }

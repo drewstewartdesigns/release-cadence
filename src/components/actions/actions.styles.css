@@ -2,3 +2,22 @@
     display: flex;
     flex-direction: row;
 }
+.action-wrapper-develop,
+.action-wrapper-release {
+    display: flex;
+    flex-direction: column;
+}
+.action-wrapper-develop {
+    background-color: forestgreen;
+    width: calc(100% / 20 * 5);
+}
+.action-wrapper-develop:first-child {
+    width: calc(100% / 20 * 3);
+}
+.action-wrapper-develop:last-child {
+    width: calc(100% / 20 * 2);
+}
+.action-wrapper-release {
+    background-color: darkseagreen;
+    width: calc(100% / 20 * 5);
+}

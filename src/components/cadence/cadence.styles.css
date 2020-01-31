@@ -1,0 +1,9 @@
+.cert-container {
+    display: flex;
+    flex-direction: column;
+}
+.cert-branch {
+    background-color: #e6e6e6;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+}

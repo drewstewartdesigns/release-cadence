@@ -22,11 +22,11 @@
     width: calc(100% / 20 * 5);
 }
 
-.nested {
+.nested-action {
     display: flex;
     flex-wrap: wrap;
 }
-.nested .action:first-child {
+.nested-action .action:first-child {
     flex-basis: 100%;
 }
 .action.defects {

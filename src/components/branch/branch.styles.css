@@ -8,6 +8,7 @@
     flex-direction: column;
 }
 .branch-develop {
+    background-color: #444;
     width: calc(100% / 20 * 5);
 }
 .branch-develop:first-child {
@@ -20,15 +21,13 @@
     width: calc(100% / 20 * 5);
 }
 .develop {
-    border-top: 1px solid black;
-    border-left: 1px solid black;
-    border-bottom: 1px solid black;
+    border-top: 1px solid #666;
+    border-left: 1px solid #666;
 }
 .branch-develop:last-child .develop {
-    border-right: 1px solid black;
+    border-right: 1px solid #666;
 }
 .release {
-    border-top: 1px solid black;
-    border-left: 1px solid black;
-    border-bottom: 1px solid black;
+    border-top: 1px solid #666;
+    border-left: 1px solid #666;
 }

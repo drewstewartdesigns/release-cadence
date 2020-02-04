@@ -16,7 +16,7 @@ export const Action = props => (
     <div className='action-container'>
         {props.actions.map(actionObj => (
             <div className={'action-wrapper-' + actionObj.class} key={actionObj.id}>
-            {createActions(actionObj)}
+                { createActions(actionObj) }
             </div>
         ))}
     </div>

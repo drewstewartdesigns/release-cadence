@@ -10,6 +10,7 @@
 .action-wrapper-develop {
     background-color: forestgreen;
     width: calc(100% / 20 * 5);
+    justify-content: center;
 }
 .action-wrapper-develop:first-child {
     width: calc(100% / 20 * 3);

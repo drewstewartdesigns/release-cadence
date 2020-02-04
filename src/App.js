@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import moment from 'moment';
 
 import { WeeksData } from './data/weeks';
 import { CadenceData } from './data/cadence';
@@ -9,10 +10,15 @@ import { Cadence } from './components/cadence/cadence.component';
 import './App.css';
 
 class App extends Component {
+  constructor() {
+    super();
+
+    this.state = {
+      currentDate: moment()
+    };
+}
 
   render() {
-
-
     return (
       <div className="App">
         <header className="App-header">

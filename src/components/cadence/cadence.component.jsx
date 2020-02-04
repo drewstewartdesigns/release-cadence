@@ -9,10 +9,11 @@ export const Cadence = props => (
         {props.cadence.map(server => (
             <div className={server.class} key={server.id}>
                 <div className='cert-branch'>
-                    <p>{server.name}</p>
+                    <p>{server.name} is currently building</p>
+                    <Branch branches={server.branches} />
                 </div>
 
-                <Branch branches={server.branches} />
+
                 <Action actions={server.actions} />
             </div>
         ))}

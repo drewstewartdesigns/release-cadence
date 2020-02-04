@@ -18,7 +18,7 @@ export const CadenceData = [
                 name: 'Develop',
                 id: 3,
                 class: 'develop'
-            },
+            }/* ,
             {
                 name: 'Release',
                 id: 4,
@@ -28,7 +28,7 @@ export const CadenceData = [
                 name: 'Develop',
                 id: 5,
                 class: 'develop'
-            }
+            } */
         ],
         actions: [
             {
@@ -73,7 +73,7 @@ export const CadenceData = [
                         id: 1
                     }
                 ]
-            },
+            }/* ,
             {
                 class: 'release',
                 id: 4,
@@ -105,7 +105,7 @@ export const CadenceData = [
                         id: 1
                     }
                 ]
-            }
+            } */
         ]
     }
 ];

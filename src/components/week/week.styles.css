@@ -12,3 +12,10 @@
 .week-container:last-child {
     border-right: 1px solid black;
 }
+
+/* display 2 week only */
+.week-container {
+    border-left: 1px solid black;
+    border-bottom: 1px solid black;
+    width: calc(100%/ 2);
+}

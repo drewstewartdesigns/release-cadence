@@ -31,3 +31,18 @@
     border-top: 1px solid #666;
     border-left: 1px solid #666;
 }
+
+/* display 2 weeks only */
+.branch-develop {
+    background-color: #444;
+    width: calc(100% / 10 * 5);
+}
+.branch-develop:first-child {
+    width: calc(100% / 10 * 3);
+}
+.branch-develop:last-child {
+    width: calc(100% / 10 * 2);
+}
+.branch-release {
+    width: calc(100% / 10 * 5);
+}

@@ -38,3 +38,20 @@
     width: calc(100% / 5 * 2);
     background-color: deepskyblue;
 }
+
+/* display 2 weeks only */
+.action-wrapper-develop {
+    background-color: forestgreen;
+    width: calc(100% / 10 * 5);
+    justify-content: center;
+}
+.action-wrapper-develop:first-child {
+    width: calc(100% / 10 * 3);
+}
+.action-wrapper-develop:last-child {
+    width: calc(100% / 10 * 2);
+}
+.action-wrapper-release {
+    background-color: darkseagreen;
+    width: calc(100% / 10 * 5);
+}

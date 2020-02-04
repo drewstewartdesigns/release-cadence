@@ -3,7 +3,7 @@ import './actions.styles.css';
 
 const createActions = (actionObj) => {
     let actions = actionObj.branch.map(branchObj => (
-        <div  className={branchObj.class}>
+        <div  className={branchObj.class} key={branchObj.id}>
             <p>{branchObj.name}</p>
         </div>
     ));

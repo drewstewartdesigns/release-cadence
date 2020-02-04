@@ -4,57 +4,43 @@ import moment from 'moment';
 
 import './day.styles.css';
 
-/*
-    - get current date
-    - get that week's Sunday
-    - build sprint
-*/
-
-let count = 0;
-//let currentDay = new Date();
 let currentDate = moment();
-
-const isWeekend = date => {
-    if (currentDate.day() === 0) {
-        // if sunday
-        count++;// advance to Monday
-    } else if (currentDate.day() === 6) {
-        // if saturday
-        count = count + 2;// advance to Monday
-    }
-}
+const startingDate = currentDate.clone().subtract(currentDate.day(), 'd');// force Sunday of the current week
+let previousDate = null;
 
 const createDate = () => {
+    debugger
 
-    //let currentIso = moment(currentDay).isoWeekday();// [mon-sun] 1, 2, 3, 4, 5, 6, 7
-    //let newIso;
+    let displayDate = startingDate.clone();
+    let activeDayClass = '';
 
+    if (previousDate !== null) displayDate = previousDate.clone();
 
-    //let monthDay = <Moment add={{days: newIso}} format='MMM. D' element='p' date={currentDay} />;
-    //let weekDay = <Moment add={{days: newIso}} format='ddd' element='p' date={currentDay} />;
+    displayDate.add(1, 'd');
 
-    isWeekend(currentDate);
+    if (displayDate.format('ddd').toLowerCase() === 'sat') displayDate.add(2, 'd');// advance to the next Monday
 
-    let nextDay = currentDate.day(count);
+    if (currentDate.isSame(displayDate)) activeDayClass = 'active';
+
     let template =  (
         <>
-        <div className='day-number'>
-            { moment(nextDay).format('MMM D')}
+        <div className={'day-number ' + activeDayClass}>
+            { displayDate.format('MMM D') }
         </div>
-        <div className='day-name'>
-            { count }
+        <div className={'day-name ' + activeDayClass}>
+            { displayDate.format('ddd') }
         </div>
         </>
     );
 
-    count++;
+    previousDate = displayDate.clone();
 
     return template;
 }
 
 export const Day = props => (
     <div className='day-list'>
-        {props.days.map((day, idx) => (
+        {props.days.map(day => (
 
 
             <div className='day-container' key={day.id}>

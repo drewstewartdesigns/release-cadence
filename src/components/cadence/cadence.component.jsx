@@ -7,7 +7,7 @@ import './cadence.styles.css';
 export const Cadence = props => (
     <>
         {props.cadence.map(server => (
-            <div className={server.class}>
+            <div className={server.class} key={server.id}>
                 <div className='cert-branch'>
                     <p>{server.name}</p>
                 </div>

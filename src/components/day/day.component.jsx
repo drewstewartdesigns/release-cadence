@@ -2,11 +2,10 @@ import React from 'react';
 import moment from 'moment';
 
 import './day.styles.css';
-debugger
+
 const firstSprintStartDate = moment('2020-01-02');// replace with date of starting sprint
 const today = moment();
 const weekDiff = Math.abs(firstSprintStartDate.week() - today.week());// number of weeks between
-//let currentSprintStartDate = today.clone().subtract(today.day(), 'd');// force Sunday of the current week
 let currentSprintStartDate = today.clone().day(2);
 if (weekDiff % 2 > 0) {
     // if evaluation is 1, current day is in week 2

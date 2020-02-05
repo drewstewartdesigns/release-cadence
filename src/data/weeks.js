@@ -18,7 +18,7 @@ export const WeeksData = [
         {id: 2},
         {id: 3},
         {id: 4, details: 'LF Cutoff'},
-        {id: 5}
+        {id: 5, details: 'Release Day'}
       ]
     }/* ,
     {

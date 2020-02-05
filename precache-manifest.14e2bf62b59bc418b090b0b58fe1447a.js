@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "ba99d39733d336238ac4ff52988fd7f7",
+    "revision": "405b6a620fc40944d9fdade0dc3135bf",
     "url": "/release-cadence/index.html"
   },
   {

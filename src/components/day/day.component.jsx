@@ -3,12 +3,20 @@ import moment from 'moment';
 
 import './day.styles.css';
 
-const currentDate = moment();
-const startingDate = currentDate.clone().subtract(currentDate.day(), 'd');// force Sunday of the current week
-let previousDate = null;
+const firstSprintStartDate = moment('2020-01-02');// replace with date of starting sprint
+const today = moment();
+const weekDiff = Math.abs(firstSprintStartDate.week() - today.week());// number of weeks between
+let currentSprintStartDate = today.clone().subtract(today.day(), 'd');// force Sunday of the current week
+if (weekDiff % 2 > 0) {
+    // if evaluation is 1, current day is in week 2
+    // step back an additional week
+    currentSprintStartDate.day(-7,);
+}
+let previousDate = null;// used to store the last found date
+let iteration = 0;// manual index cuz provided resets each week i.e. only goes to 5
 
-const createDate = (day, idx) => {
-    let displayDate = startingDate.clone();
+const createDate = (day) => {
+    let displayDate = currentSprintStartDate.clone();
     let activeDayClass = '';
 
     if (previousDate !== null) displayDate = previousDate.clone();
@@ -17,12 +25,12 @@ const createDate = (day, idx) => {
 
     if (displayDate.format('ddd').toLowerCase() === 'sat') displayDate.add(2, 'd');// advance to the next Monday
 
-    if (currentDate.isSame(displayDate)) activeDayClass = 'active';
+    if (today.isSame(displayDate)) activeDayClass = 'active';
 
     let template =  (
         <div className='day-container' key={day.id}>
             {activeDayClass.length > 0 &&
-                <div className='active-column' data-col-position={idx + 1}></div>
+                <div className='active-column' data-col-position={iteration + 1}></div>
             }
             <div className={'day-details ' + (day.details ? 'bordered' : '') + activeDayClass}>
                 { day.details &&
@@ -40,7 +48,7 @@ const createDate = (day, idx) => {
     );
 
     previousDate = displayDate.clone();
-
+    iteration++;
     return template;
 }
 

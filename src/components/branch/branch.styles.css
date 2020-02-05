@@ -8,33 +8,7 @@
     flex-direction: column;
 }
 .branch-develop {
-    background-color: #444;
-    width: calc(100% / 20 * 5);
-}
-.branch-develop:first-child {
-    width: calc(100% / 20 * 3);
-}
-.branch-develop:last-child {
-    width: calc(100% / 20 * 2);
-}
-.branch-release {
-    width: calc(100% / 20 * 5);
-}
-.develop {
-    border-top: 1px solid #666;
-    border-left: 1px solid #666;
-}
-.branch-develop:last-child .develop {
-    border-right: 1px solid #666;
-}
-.release {
-    border-top: 1px solid #666;
-    border-left: 1px solid #666;
-}
-
-/* display 2 weeks only */
-.branch-develop {
-    background-color: #444;
+    background-color: #3b3a3e;
     width: calc(100% / 10 * 5);
 }
 .branch-develop:first-child {

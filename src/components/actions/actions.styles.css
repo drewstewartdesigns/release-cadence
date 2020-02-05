@@ -8,40 +8,7 @@
     flex-direction: column;
 }
 .action-wrapper-develop {
-    background-color: forestgreen;
-    width: calc(100% / 20 * 5);
-    justify-content: center;
-}
-.action-wrapper-develop:first-child {
-    width: calc(100% / 20 * 3);
-}
-.action-wrapper-develop:last-child {
-    width: calc(100% / 20 * 2);
-}
-.action-wrapper-release {
-    background-color: darkseagreen;
-    width: calc(100% / 20 * 5);
-}
-
-.nested-action {
-    display: flex;
-    flex-wrap: wrap;
-}
-.nested-action .action:first-child {
-    flex-basis: 100%;
-}
-.action.defects {
-    width: calc(100% / 5 * 3);
-    background-color: lightsteelblue;
-}
-.action.blockers {
-    width: calc(100% / 5 * 2);
-    background-color: deepskyblue;
-}
-
-/* display 2 weeks only */
-.action-wrapper-develop {
-    background-color: forestgreen;
+    background-color: #60B99A;
     width: calc(100% / 10 * 5);
     justify-content: center;
 }
@@ -52,6 +19,21 @@
     width: calc(100% / 10 * 2);
 }
 .action-wrapper-release {
-    background-color: darkseagreen;
+    background-color: #F1EFA5;
     width: calc(100% / 10 * 5);
+}
+.nested-action {
+    display: flex;
+    flex-wrap: wrap;
+}
+.nested-action .action:first-child {
+    flex-basis: 100%;
+}
+.action.defects {
+    width: calc(100% / 5 * 3);
+    background-color: #D3CE3D;
+}
+.action.blockers {
+    width: calc(100% / 5 * 2);
+    background-color: #F77825;
 }

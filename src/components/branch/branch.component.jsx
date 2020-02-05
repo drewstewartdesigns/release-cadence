@@ -7,7 +7,7 @@ export const Branch = props => (
         {props.branches.map(branchObj => (
             <div key={branchObj.id} className={'branch-' + branchObj.class}>
                 <div className={branchObj.class}>
-                    <p>{branchObj.name}</p>
+                    <p>CERT is building the {branchObj.name} branch</p>
                 </div>
             </div>
         ))}

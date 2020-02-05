@@ -2,15 +2,16 @@ import React from 'react';
 import moment from 'moment';
 
 import './day.styles.css';
-
+debugger
 const firstSprintStartDate = moment('2020-01-02');// replace with date of starting sprint
 const today = moment();
 const weekDiff = Math.abs(firstSprintStartDate.week() - today.week());// number of weeks between
-let currentSprintStartDate = today.clone().subtract(today.day(), 'd');// force Sunday of the current week
+//let currentSprintStartDate = today.clone().subtract(today.day(), 'd');// force Sunday of the current week
+let currentSprintStartDate = today.clone().day(2);
 if (weekDiff % 2 > 0) {
     // if evaluation is 1, current day is in week 2
     // step back an additional week
-    currentSprintStartDate.day(-7,);
+    currentSprintStartDate.day(2 - 7);
 }
 let previousDate = null;// used to store the last found date
 let iteration = 0;// manual index cuz provided resets each week i.e. only goes to 5
@@ -32,7 +33,7 @@ const createDate = (day) => {
             {activeDayClass.length > 0 &&
                 <div className='active-column' data-col-position={iteration + 1}></div>
             }
-            <div className={'day-details ' + (day.details ? 'bordered' : '') + activeDayClass}>
+            <div className={'day-details ' + (day.details ? 'bordered ' : '') + activeDayClass}>
                 { day.details &&
                     <p>{ day.details }</p>
                 }

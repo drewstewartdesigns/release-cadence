@@ -5,7 +5,7 @@ export const WeeksData = [
       days: [
         {id: 1},
         {id: 2},
-        {id: 3, details: 'SF Cut'},
+        {id: 3, details: 'SF Cutoff'},
         {id: 4},
         {id: 5}
       ]
@@ -14,10 +14,10 @@ export const WeeksData = [
       name: 'Week 2',
       id: 2,
       days: [
-        {id: 1, details: 'Bug Cut'},
+        {id: 1, details: 'Bug Cutoff'},
         {id: 2},
         {id: 3},
-        {id: 4, details: 'LF Cut'},
+        {id: 4, details: 'LF Cutoff'},
         {id: 5}
       ]
     }/* ,

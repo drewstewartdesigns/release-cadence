@@ -16,7 +16,19 @@ class App extends Component {
     this.state = {
       currentDate: moment()
     };
-}
+  }
+
+  intervalId;
+
+  componentDidMount() {
+    this.intervalId = setInterval(
+      () => window.location.reload(),
+      21600000// 6 hours
+    );
+  }
+  componentWillUnmount() {
+    clearInterval(this.intervalId);
+  }
 
   render() {
     return (

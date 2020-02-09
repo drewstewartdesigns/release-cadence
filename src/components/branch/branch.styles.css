@@ -8,7 +8,6 @@
     flex-direction: column;
 }
 .branch-develop {
-    background-color: #3b3a3e;
     width: calc(100% / 10 * 5);
 }
 .branch-develop:first-child {
@@ -18,5 +17,7 @@
     width: calc(100% / 10 * 2);
 }
 .branch-release {
+    border-right: 1px solid white;
+    border-left: 1px solid white;
     width: calc(100% / 10 * 5);
 }

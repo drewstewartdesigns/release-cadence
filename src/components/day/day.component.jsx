@@ -32,16 +32,16 @@ const createDate = (day) => {
             {activeDayClass.length > 0 &&
                 <div className='active-column' data-col-position={iteration + 1}></div>
             }
-            <div className={'day-details ' + (day.details ? 'bordered ' : '') + activeDayClass}>
+            <div className={'day-details ' + (day.details ? day.class : '') + activeDayClass}>
                 { day.details &&
                     <p>{ day.details }</p>
                 }
             </div>
             <div className={'day-number ' + activeDayClass}>
-                { displayDate.format('MMM D') }
+                { displayDate.format('MMM Do') }
             </div>
             <div className={'day-name ' + activeDayClass}>
-                { displayDate.format('ddd') }
+                { displayDate.format('dddd') }
             </div>
         </div>
 

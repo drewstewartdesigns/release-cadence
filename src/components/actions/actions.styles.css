@@ -19,7 +19,6 @@
     width: calc(100% / 10 * 2);
 }
 .action-wrapper-release {
-    background-color: #F1EFA5;
     width: calc(100% / 10 * 5);
 }
 .nested-action {
@@ -29,11 +28,38 @@
 .nested-action .action:first-child {
     flex-basis: 100%;
 }
+.action {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.action.regression {
+    background-color: #F1EFA5;
+}
 .action.defects {
+    color: #fff;
+    font-weight: 700;
     width: calc(100% / 5 * 3);
-    background-color: #D3CE3D;
+    background: repeating-linear-gradient(
+        45deg,
+        #F85D31,
+        #F85D31 10px,
+        #F9714B 10px,
+        #F9714B 20px
+    );
 }
 .action.blockers {
+    color: #fff;
     width: calc(100% / 5 * 2);
-    background-color: #F77825;
+    background: repeating-linear-gradient(
+        45deg,
+        #E60541,
+        #E60541 10px,
+        #EC4471 10px,
+        #EC4471 20px
+    );
+}
+.action.defects p,
+.action.blockers p {
+    font-weight: 700;
 }

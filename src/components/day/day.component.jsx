@@ -2,18 +2,19 @@ import React from 'react';
 import moment from 'moment';
 
 import './day.styles.css';
-
-const firstCadenceStartDate = moment('2020-02-01');// replace with date of starting cadence
+//debugger
+const firstCadenceStartDate = moment('2020-02-12');// replace with date of starting cadence
 const today = moment();
 // const weekDiff = Math.floor(firstCadenceStartDate.week() - today.week());// number of weeks between
-const weekDiff = today.diff(firstCadenceStartDate, 'weeks');
+const weekDiff = today.diff(firstCadenceStartDate, 'days') / 7;
 
 let currentCadenceStartDate = today.clone().day(2);
-if (weekDiff % 2 > 0 && today.day() <= 2) {
-    // if evaluation is 1, current day is in week 2
-    // step back 2 weeks
-    currentCadenceStartDate.day(2 - 14);
-    
+let difference = Math.round(weekDiff % 2);
+if (difference === 1) {
+  currentCadenceStartDate.day(2 - 7);
+} else if (difference > 1 && today.day() <= 2) {
+  // Monday or Tuesday of week 2
+  currentCadenceStartDate.day(2 - 14);
 }
 let previousDate = null;// used to store the last found date
 let iteration = 0;// manual index cuz provided resets each week i.e. only goes to 5

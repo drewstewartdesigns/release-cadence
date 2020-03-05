@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/release-cadence/static/css/main.b5855f84.chunk.css",
-    "main.js": "/release-cadence/static/js/main.e9347be3.chunk.js",
-    "main.js.map": "/release-cadence/static/js/main.e9347be3.chunk.js.map",
+    "main.css": "/release-cadence/static/css/main.a0e8d5e1.chunk.css",
+    "main.js": "/release-cadence/static/js/main.92ff7e87.chunk.js",
+    "main.js.map": "/release-cadence/static/js/main.92ff7e87.chunk.js.map",
     "runtime-main.js": "/release-cadence/static/js/runtime-main.0b7200d2.js",
     "runtime-main.js.map": "/release-cadence/static/js/runtime-main.0b7200d2.js.map",
     "static/js/2.1bd93817.chunk.js": "/release-cadence/static/js/2.1bd93817.chunk.js",
     "static/js/2.1bd93817.chunk.js.map": "/release-cadence/static/js/2.1bd93817.chunk.js.map",
     "index.html": "/release-cadence/index.html",
-    "precache-manifest.18d88739f74e207aa0e0ddaad1261b5c.js": "/release-cadence/precache-manifest.18d88739f74e207aa0e0ddaad1261b5c.js",
+    "precache-manifest.9d8d76eb2acb2d65064c9c3ff131ba21.js": "/release-cadence/precache-manifest.9d8d76eb2acb2d65064c9c3ff131ba21.js",
     "service-worker.js": "/release-cadence/service-worker.js",
-    "static/css/main.b5855f84.chunk.css.map": "/release-cadence/static/css/main.b5855f84.chunk.css.map",
+    "static/css/main.a0e8d5e1.chunk.css.map": "/release-cadence/static/css/main.a0e8d5e1.chunk.css.map",
     "static/js/2.1bd93817.chunk.js.LICENSE": "/release-cadence/static/js/2.1bd93817.chunk.js.LICENSE"
   },
   "entrypoints": [
     "static/js/runtime-main.0b7200d2.js",
     "static/js/2.1bd93817.chunk.js",
-    "static/css/main.b5855f84.chunk.css",
-    "static/js/main.e9347be3.chunk.js"
+    "static/css/main.a0e8d5e1.chunk.css",
+    "static/js/main.92ff7e87.chunk.js"
   ]
 }

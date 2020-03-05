@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "e13a18e55081e9c45c29d65cd034cc41",
+    "revision": "0cd322035691b2f4784536923abf927a",
     "url": "/release-cadence/index.html"
   },
   {
-    "revision": "d946cf70fe28d2447d9a",
-    "url": "/release-cadence/static/css/main.b5855f84.chunk.css"
+    "revision": "fe992c72e561e0e9f367",
+    "url": "/release-cadence/static/css/main.a0e8d5e1.chunk.css"
   },
   {
     "revision": "08748ad7452e8f8c787e",
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/release-cadence/static/js/2.1bd93817.chunk.js.LICENSE"
   },
   {
-    "revision": "d946cf70fe28d2447d9a",
-    "url": "/release-cadence/static/js/main.e9347be3.chunk.js"
+    "revision": "fe992c72e561e0e9f367",
+    "url": "/release-cadence/static/js/main.92ff7e87.chunk.js"
   },
   {
     "revision": "40734748306930de6fb0",

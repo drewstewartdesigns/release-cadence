@@ -1,8 +1,5 @@
 import React, { Component } from 'react';
-import moment from 'moment';
 
-import { WeeksData } from './data/weeks';
-import { CadenceData } from './data/cadence';
 import { Week } from './components/week/week.component';
 import { Cadence } from './components/cadence/cadence.component';
 
@@ -14,16 +11,23 @@ class App extends Component {
     super();
 
     this.state = {
-      currentDate: moment()
+      weeksData: [],
+      cadenceData: []
     };
   }
-
   intervalId;
 
   componentDidMount() {
+    fetch('https://api.myjson.com/bins/14xvmi')
+      .then(response => response.json())
+      .then(data => this.setState({
+        weeksData: data.weeks,
+        cadenceData: data.cadence
+      }))
+
     this.intervalId = setInterval(
       () => window.location.reload(),
-      21600000// 6 hours
+      14400000// 4 hours
     );
   }
   componentWillUnmount() {
@@ -36,8 +40,8 @@ class App extends Component {
         <header className="App-header">
           <h1>WCS Release Cadence</h1>
         </header>
-        <Week weeks={WeeksData} />
-        <Cadence cadence={CadenceData} />
+        <Week weeks={this.state.weeksData} />
+        <Cadence cadence={this.state.cadenceData} />
       </div>
     );
   }

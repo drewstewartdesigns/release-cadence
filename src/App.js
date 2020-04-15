@@ -18,12 +18,19 @@ class App extends Component {
   intervalId;
 
   componentDidMount() {
-    fetch('https://api.myjson.com/bins/14xvmi')
+    fetch('https://api.jsonbin.io/b/5e965671435f5604bb418da0', {
+      headers: {
+        'secret-key': '$2b$10$MQuD7G12QB6V.MOYR5ipmumeCn5gd6lcfG/A3IPAvWYsSpElwD5Pe'
+      }
+    })
       .then(response => response.json())
       .then(data => this.setState({
         weeksData: data.weeks,
         cadenceData: data.cadence
       }))
+      .catch((error) => {
+        console.log('Error: ', error);
+      });
 
     this.intervalId = setInterval(
       () => window.location.reload(),

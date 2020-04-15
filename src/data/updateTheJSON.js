@@ -106,7 +106,7 @@ $("#clickMe").click(function () {
 
     // do update
     $.ajax({
-        url: "https://api.myjson.com/bins/14xvmi",
+        url: "https://api.jsonbin.io/b/5e965671435f5604bb418da0",
         type: "PUT",
         data: data,
         contentType: "application/json; charset=utf-8",

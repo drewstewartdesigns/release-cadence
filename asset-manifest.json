@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/release-cadence/static/css/main.0abeead2.chunk.css",
+    "main.css": "/release-cadence/static/css/main.44680a8e.chunk.css",
     "main.js": "/release-cadence/static/js/main.56bdb2ef.chunk.js",
     "main.js.map": "/release-cadence/static/js/main.56bdb2ef.chunk.js.map",
     "runtime-main.js": "/release-cadence/static/js/runtime-main.0b7200d2.js",
@@ -8,15 +8,15 @@
     "static/js/2.1bd93817.chunk.js": "/release-cadence/static/js/2.1bd93817.chunk.js",
     "static/js/2.1bd93817.chunk.js.map": "/release-cadence/static/js/2.1bd93817.chunk.js.map",
     "index.html": "/release-cadence/index.html",
-    "precache-manifest.cf070ccdc35d659c765b4e8c3d9e2832.js": "/release-cadence/precache-manifest.cf070ccdc35d659c765b4e8c3d9e2832.js",
+    "precache-manifest.6c3a32c736a090e52ca378c1d99fabfb.js": "/release-cadence/precache-manifest.6c3a32c736a090e52ca378c1d99fabfb.js",
     "service-worker.js": "/release-cadence/service-worker.js",
-    "static/css/main.0abeead2.chunk.css.map": "/release-cadence/static/css/main.0abeead2.chunk.css.map",
+    "static/css/main.44680a8e.chunk.css.map": "/release-cadence/static/css/main.44680a8e.chunk.css.map",
     "static/js/2.1bd93817.chunk.js.LICENSE": "/release-cadence/static/js/2.1bd93817.chunk.js.LICENSE"
   },
   "entrypoints": [
     "static/js/runtime-main.0b7200d2.js",
     "static/js/2.1bd93817.chunk.js",
-    "static/css/main.0abeead2.chunk.css",
+    "static/css/main.44680a8e.chunk.css",
     "static/js/main.56bdb2ef.chunk.js"
   ]
 }

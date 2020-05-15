@@ -5,6 +5,7 @@ import { Cadence } from './components/cadence/cadence.component';
 
 
 import './App.css';
+import { Drinks } from './components/drinks/drinks.component';
 
 class App extends Component {
   constructor() {
@@ -12,7 +13,8 @@ class App extends Component {
 
     this.state = {
       weeksData: [],
-      cadenceData: []
+      cadenceData: [],
+      drinksData: []
     };
   }
   intervalId;
@@ -36,6 +38,12 @@ class App extends Component {
       () => window.location.reload(),
       14400000// 4 hours
     );
+
+    fetch('https://www.thecocktaildb.com/api/json/v1/1/random.php')
+      .then(response => response.json())
+      .then(data => this.setState({
+        drinksData: data.drinks
+      }));
   }
   componentWillUnmount() {
     clearInterval(this.intervalId);
@@ -49,6 +57,7 @@ class App extends Component {
         </header>
         <Week weeks={this.state.weeksData} />
         <Cadence cadence={this.state.cadenceData} />
+        <Drinks drinks={this.state.drinksData} />
       </div>
     );
   }

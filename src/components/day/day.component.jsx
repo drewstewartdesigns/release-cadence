@@ -41,7 +41,7 @@ const createDate = (day) => {
                     <p>{ day.title }</p>
                 }
                 { day.description &&
-                    <p class="day-description">{ day.description }</p>
+                    <p className="day-description">{ day.description }</p>
                 }
             </div>
             <div className={'day-number ' + activeDayClass}>

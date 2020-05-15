@@ -1,0 +1,44 @@
+.drink-wrapper {
+    display: flex;
+    margin: 40px 0;
+    padding: 0 40px;
+}
+.drink-container {
+    display: flex;
+    flex-direction: row;
+}
+.drink-image {
+    background-color: #ddd;
+}
+.drink-image > img {
+    display: block;
+    height: auto;
+    padding: 4px;
+    width: 250px;
+}
+.drink-info {
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    padding: 0 0 10px 30px;
+    justify-content: center;
+    text-align: left;
+}
+.drink-title {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    font-size: 40px;
+    margin: 0;
+}
+.drink-glass {
+    color: #999;
+    font-style: italic;
+    margin: 0 0 0 40px;
+}
+.drink-ingredients {
+    list-style: none;
+    padding: 0;
+}
+.drink-instructions {
+    margin: 0;
+}

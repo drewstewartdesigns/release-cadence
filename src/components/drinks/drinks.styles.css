@@ -7,11 +7,9 @@
     display: flex;
     flex-direction: row;
 }
-.drink-image {
-    background-color: #ddd;
-}
 .drink-image > img {
     display: block;
+    background-color: #ddd;
     height: auto;
     padding: 4px;
     width: 250px;

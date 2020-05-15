@@ -18,7 +18,7 @@ class App extends Component {
   intervalId;
 
   componentDidMount() {
-    fetch('https://api.jsonbin.io/b/5e965671435f5604bb418da0', {
+    fetch('https://api.jsonbin.io/b/5e965671435f5604bb418da0/2', {
       headers: {
         'secret-key': '$2b$10$MQuD7G12QB6V.MOYR5ipmumeCn5gd6lcfG/A3IPAvWYsSpElwD5Pe'
       }

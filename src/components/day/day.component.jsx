@@ -36,9 +36,12 @@ const createDate = (day) => {
             {activeDayClass.length > 0 &&
                 <div className='active-column' data-col-position={iteration + 1}></div>
             }
-            <div className={'day-details ' + (day.details ? day.class : '') + ' ' + activeDayClass}>
-                { day.details &&
-                    <p>{ day.details }</p>
+            <div className={'day-details ' + (day.title ? day.class : '') + ' ' + activeDayClass}>
+                { day.title &&
+                    <p>{ day.title }</p>
+                }
+                { day.description &&
+                    <p class="day-description">{ day.description }</p>
                 }
             </div>
             <div className={'day-number ' + activeDayClass}>

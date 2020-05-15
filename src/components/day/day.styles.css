@@ -18,6 +18,7 @@
 .day-container > div:not(.active-column) {
     align-items: center;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     width: 100%;
     min-height: 50px;
@@ -33,6 +34,10 @@
     color: #fff;
     width: calc(100% - 1px);
 }
+.bl-cutoff {
+    background-color: #E60541;
+    color: #fff;
+}
 .release-day {
     background: repeating-linear-gradient(
         45deg,
@@ -45,6 +50,9 @@
 .day-details p {
     font-size: 14px;
     margin: 0;
+}
+.day-description {
+    font-size: 12px;
 }
 .day-name,
 .day-number {
